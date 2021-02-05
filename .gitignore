@@ -1,25 +1,83 @@
-#Learn more about Jenkins and JENKINS_HOME directory for which this file is intended.
-#  http://jenkins-ci.org/
-#  https://wiki.jenkins-ci.org/display/JENKINS/Administering+Jenkins
+# Eclipse
 
-#ignore all JENKINS_HOME except jobs directory, root xml config, and .gitignore file
-/*
-!/jobs
-!/.gitignore
-!/*.xml
+.classpath
 
-#ignore all files in jobs subdirectories except for folders
-#note: git doesn't track folders, only file content
-jobs/**
-!jobs/**/
+.project
 
-#uncomment the following line to save next build numbers with config
-#!jobs/**/nextBuildNumber
+.settings/
 
-#exclude only config.xml files in repository subdirectories
-!config.xml
+ 
 
-#don't track workspaces (when users build on the master)
-jobs/**/*workspace
+# Intellij
 
-#as a result only settings and job config.xml files in JENKINS_HOME will be tracked by git
+.idea/
+
+.gradle/
+
+*.iml
+
+*.iws
+
+*.editorconfig
+
+ 
+
+# Gradle
+
+log/
+
+target/
+
+hooks/pre-push
+
+ 
+
+# Java
+
+build/
+
+out/
+
+*.class
+
+*.jar
+
+*.war
+
+*.ear
+
+ 
+
+# Log file
+
+*.log
+
+.scannerwork/report-task.txt
+
+.scannerwork/.sonar_lock
+
+.scannerwork/
+
+ 
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+
+hs_err_pid*
+
+ 
+
+.gradle
+
+build/
+
+# Ignore Gradle GUI config
+
+gradle-app.setting
+
+# Avoid ignoring Gradle wrapper jar file (.jar files are usually ignored)
+
+!gradle-wrapper.jar
+
+# Cache of project
+
+.gradletasknamecache
