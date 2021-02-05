@@ -11,7 +11,7 @@ Feature: : Utest
       |Juan           | Moreno       | juancholo11@hotmail.es | September        |7      |1994   | Manizales | 170001     | 123.Asdf1225| 123.Asdf1225       |
     When he get a welcome message
       |strPased         |
-      |Welcome          |
+      |Welcome to the world's largest community of freelance software testers!        |
     Then he get access
       |strPased         |
-      |Welcome          |
+      |Welcome to the world's largest community of freelance software testers!         |
